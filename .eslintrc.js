@@ -10,23 +10,20 @@ module.exports = {
     'plugin:@typescript-eslint/eslint-recommended',
     'plugin:@typescript-eslint/recommended',
     'plugin:react/recommended',
-    "plugin:jsx-a11y/recommended",
-    
+    'plugin:jsx-a11y/recommended',
+
     // Prettier plugin and recommended rules
     'prettier/@typescript-eslint',
-    'plugin:prettier/recommended'
+    'plugin:prettier/recommended',
   ],
   rules: {
-    
     // Include .prettierrc.js rules
-    'prettier/prettier': [ 
-      "error", {}, { "usePrettierrc": true }
-    ],
+    'prettier/prettier': ['error', {}, { usePrettierrc: true }],
 
     'react/prop-types': 'off',
     'padding-line-between-statements': [
-      "error",
-      { blankLine: "always", prev: "*", next: "return" }
-    ]
+      'error',
+      { blankLine: 'always', prev: '*', next: 'return' },
+    ],
   },
 };

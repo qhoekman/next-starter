@@ -49,9 +49,9 @@ What things you need to install the software and how to install them.
 Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init) or [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) to bootstrap the example:
 
 ```bash
-npx create-next-app --example git@github.com:qhoekman/next-starter.git
+npx create-next-app project --example https://github.com/qhoekman/next-starter
 # or
-yarn create next-app --example git@github.com:qhoekman/next-starter.git
+yarn create next-app project --example https://github.com/qhoekman/next-starter
 ```
 
 ## 🚀 Deployment <a name="deployment"></a>

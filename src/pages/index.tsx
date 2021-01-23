@@ -1,7 +1,10 @@
-import { Box } from '@chakra-ui/core';
+import { Box } from '@chakra-ui/react';
+import React from 'react';
 
 const Index: React.FC = () => {
-  return <Box />;
+  return  (
+    <Box></Box>
+  )
 };
 
 export default Index;

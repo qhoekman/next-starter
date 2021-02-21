@@ -7,8 +7,10 @@
     "start": "next start"
   },
   "dependencies": {
-    "@chakra-ui/react": "latest",
     "@chakra-ui/icons": "latest",
+    "@chakra-ui/react": "latest",
+    "@emotion/react": "11.1.5",
+    "@emotion/styled": "11.1.5",
     "framer-motion": "latest",
     "next": "latest",
     "react": "17.0.1",

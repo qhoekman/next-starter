@@ -11,11 +11,11 @@
     "@chakra-ui/icons": "latest",
     "@chakra-ui/react": "latest",
     "@emotion/react": "11.1.5",
-    "@emotion/styled": "11.1.5",
+    "@emotion/styled": "11.3.0",
     "framer-motion": "latest",
     "next": "latest",
-    "react": "17.0.1",
-    "react-dom": "17.0.1"
+    "react": "17.0.2",
+    "react-dom": "17.0.2"
   },
   "devDependencies": {
     "@types/node": "14.14.22",
@@ -25,6 +25,7 @@
     "@typescript-eslint/parser": "4.14.0",
     "eslint": "7.12.1",
     "eslint-config-prettier": "7.2.0",
+    "eslint-plugin-import": "2.22.1",
     "eslint-plugin-jsx-a11y": "6.4.1",
     "eslint-plugin-prettier": "3.3.1",
     "eslint-plugin-react": "7.22.0",

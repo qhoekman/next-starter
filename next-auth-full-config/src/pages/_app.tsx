@@ -1,6 +1,6 @@
 import theme from '@/theme';
 import { ChakraProvider } from '@chakra-ui/react';
-import { AppComponent } from 'next/dist/shared/lib/router/router';
+import { AppComponent } from 'next/dist/next-server/lib/router/router';
 
 const App: AppComponent = ({ Component, pageProps }) => {
   return (

@@ -1,7 +1,5 @@
-import { Button } from '@/components/button/button';
-
-const IndexPage: React.FC = () => {
-  return <Button>Hello World</Button>;
+const Page: React.FC = () => {
+  return <div />;
 };
 
-export default IndexPage;
+export default Page;

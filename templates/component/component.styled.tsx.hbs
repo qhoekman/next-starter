@@ -1,0 +1,25 @@
+import { cva, VariantProps } from 'class-variance-authority';
+import React from 'react';
+
+interface {{pascalCase name}}Props {
+  color?: VariantProps<typeof {{pascalCase name}}Style>['color'];
+  className?: string;
+  children: React.ReactNode;
+}
+
+const {{pascalCase name}}Style = cva('', {
+  variants: {
+    color: {
+      primary: ''
+    }
+  }
+})
+
+export const {{pascalCase name}}: React.FC<{{pascalCase name}}Props> = ({color, className, children, ...props}) => {
+  return <div data-testid="{{kebabCase name}}" className={ {{pascalCase name}}Style({
+    color,
+    className
+  }) } {...props}>
+    {children}
+  </div>;
+};

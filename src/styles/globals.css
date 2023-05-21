@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-primary: 222.2 47.4% 11.2%;
+    --color-primary-fg: 210 40% 98%;
+    --color-secondary: 210 40% 96.1%;
+    --color-secondary-fg: 222.2 47.4% 11.2%;
+    --color-accent: 210 40% 96.1%;
+    --color-accent-fg: 222.2 47.4% 11.2%;
+    --color-destructive: 0 100% 50%;
+    --color-destructive-fg: 210 40% 98%;
+  }
+
+  .dark {
+    --color-primary: 210 40% 98%;
+    --color-primary-fg: 222.2 47.4% 1.2%;
+    --color-secondary: 222.2 47.4% 11.2%;
+    --color-secondary-fg: 210 40% 98%;
+    --color-destructive: 0 63% 31%;
+    --color-destructive-fg: 210 40% 98%;
+    --color-accent: 216 34% 17%;
+    --color-accent-fg: 210 40% 98%;
+  }
+}

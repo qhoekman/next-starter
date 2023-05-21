@@ -1,0 +1,12 @@
+import { composeStories } from '@storybook/testing-react';
+
+import * as stories from './{{kebabCase name}}.stories';
+
+const { Default: {{pascalCase name}}Default } = composeStories(stories);
+
+describe('{{prefix}}/{{pascalCase name}}', () => {
+  it('should make sure that the {{pascalCase name}} works', () => {
+    cy.mount(<{{pascalCase name}}Default data-testid="{{kebabCase name}}"></{{pascalCase name}}Default>);
+    cy.findByTestId('{{kebabCase name}}').should('exist');
+  });
+});

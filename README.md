@@ -32,7 +32,7 @@
 
 ## 🧐 About <a name="about"></a>
 
-A boilerplate project which kickstart your NextJs app with TypeScript, ESLint, Prettier, Theming, Styled System and Animations.
+A boilerplate project which kickstart your NextJs app with TypeScript, ESLint, Prettier, Theming, TailwindCSS, Cypress, Storybook. MSW.
 
 ## 🏁 Getting Started <a name="getting_started"></a>
 
@@ -67,8 +67,6 @@ Deploy it to the cloud with [Vercel](https://vercel.com/import?filter=next.js&ut
 - [NextJs](https://nextjs.org/) - Server Framework
 - [ReactJs](https://reactjs.org/) - UI Library
 - [NodeJs](https://nodejs.org/en/) - Server Environment
-- [ChakraUI](https://chakra-ui.com/) - Styled System + Component Library
-- [FramerMotion](https://www.framer.com/motion/) - Animation Library
 
 ## ✍️ Authors <a name="authors"></a>
 

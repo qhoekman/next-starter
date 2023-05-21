@@ -1,3 +1,4 @@
+/** @type {import('prettier').Config} */
 module.exports = {
   // Change your rules accordingly to your coding style preferencies.
   // https://prettier.io/docs/en/options.html
@@ -5,9 +6,40 @@ module.exports = {
   trailingComma: 'es5',
   singleQuote: true,
   bracketSpacing: true,
-  jsxBracketSameLine: true,
+  bracketSameLine: false,
   arrowParens: 'always',
   printWidth: 100,
   tabWidth: 2,
-  useTabs: false
-}
+  useTabs: false,
+  importOrder: [
+    '^(react/(.*)$)|^(react$)',
+    '^(next/(.*)$)|^(next$)',
+    '<THIRD_PARTY_MODULES>',
+    '',
+    '^types$',
+    '^@/types/(.*)$',
+    '^@/config/(.*)$',
+    '^@/lib/(.*)$',
+    '^@/hooks/(.*)$',
+    '^@/providers/(.*)$',
+    '^@/components/(.*)$',
+    '^@/features/(.*)$',
+    '^@/features/(.*)/types/(.*)$',
+    '^@/features/(.*)/hooks/(.*)$',
+    '^@/features/(.*)/components/(.*)$',
+    '^@/features/(.*)/pages/(.*)$',
+    '^@/features/(.*)/layouts/(.*)$',
+    '^@/styles/(.*)$',
+    '^@/app/(.*)$',
+    '^@/mocks/(.*)$',
+    '',
+    '^[./]',
+  ],
+  importOrderSeparation: false,
+  importOrderSortSpecifiers: true,
+  importOrderBuiltinModulesToTop: true,
+  importOrderParserPlugins: ['typescript', 'jsx', 'decorators-legacy'],
+  importOrderMergeDuplicateImports: true,
+  importOrderCombineTypeAndValueImports: true,
+  plugins: ['@ianvs/prettier-plugin-sort-imports'],
+};

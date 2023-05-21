@@ -42,16 +42,16 @@ These instructions will get you a copy of the project up and running on your loc
 
 What things you need to install the software and how to install them.
 
-- NodeJs
+- NodeJs (v18)
 
 ## 🎈 Usage <a name="usage"></a>
 
 Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init) or [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) to bootstrap the example:
 
 ```bash
-npx create-next-app project --example https://github.com/qhoekman/next-starter
+npx create-next-app -e https://github.com/qhoekman/next-starter my-app
 # or
-yarn create next-app project --example https://github.com/qhoekman/next-starter
+yarn create next-app -e https://github.com/qhoekman/next-starter my-app
 ```
 
 ## 🚀 Deployment <a name="deployment"></a>
@@ -64,9 +64,17 @@ Deploy it to the cloud with [Vercel](https://vercel.com/import?filter=next.js&ut
 
 ## ⛏️ Built Using <a name="built_using"></a>
 
-- [NextJs](https://nextjs.org/) - Server Framework
+- [NextJs](https://nextjs.org/) - Meta Framework
 - [ReactJs](https://reactjs.org/) - UI Library
 - [NodeJs](https://nodejs.org/en/) - Server Environment
+- [TailwindCSS](https://tailwindcss.com/) - CSS Framework
+- [Class Variance Authority](https://cva.style) - CSS-in-TS Library
+- [TypeScript](https://www.typescriptlang.org/) - Programming Language
+- [ESLint](https://eslint.org/) - Linting
+- [Prettier](https://prettier.io/) - Code Formatter
+- [Storybook](https://storybook.js.org/) - Component Library
+- [Cypress](https://www.cypress.io/) - E2E Testing
+- [MSW](https://mswjs.io/) - Mocking API
 
 ## ✍️ Authors <a name="authors"></a>
 
@@ -78,4 +86,5 @@ See also the list of [contributors](https://github.com/qhoekman/next-starter/con
 
 - Hat tip to anyone whose code was used
 - Inspiration
+  - [Shadcn](https://ui.shadcn.com) - Re-useable UI Components
 - References

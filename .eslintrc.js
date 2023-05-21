@@ -15,15 +15,10 @@ module.exports = {
     'plugin:jsx-a11y/recommended',
     'plugin:tailwindcss/recommended',
     'plugin:storybook/recommended',
+    'plugin:@next/next/recommended',
   ],
   rules: {
-    'prettier/prettier': [
-      'error',
-      {},
-      {
-        usePrettierrc: true,
-      },
-    ],
+    'react/react-in-jsx-scope': 'off',
     'react/prop-types': 'off',
     'padding-line-between-statements': [
       'error',

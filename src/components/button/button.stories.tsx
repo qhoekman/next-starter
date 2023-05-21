@@ -8,8 +8,8 @@ export default {
 } as Meta<typeof Button>;
 
 export const Default: StoryFn = (args) => <Button {...args}>Hello World</Button>;
-export const asLink: StoryFn = (args) => (
+export const AsLink: StoryFn = (args) => (
   <Button {...args} asChild>
-    <a href="#">Hello World</a>
+    <a href="https://google.com">Hello World</a>
   </Button>
 );

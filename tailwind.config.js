@@ -5,6 +5,11 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        border: 'hsl(var(--color-border))',
+        input: 'hsl(var(--color-input))',
+        ring: 'hsl(var(--color-ring))',
+        background: 'hsl(var(--color-background))',
+        foreground: 'hsl(var(--color-foreground))',
         primary: {
           DEFAULT: 'hsl(var(--color-primary))',
           fg: 'hsl(var(--color-primary-fg))',

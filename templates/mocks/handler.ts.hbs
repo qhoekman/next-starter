@@ -1,0 +1,14 @@
+import { rest } from 'msw';
+
+import { API_ENDPOINT } from '@/config/constants';
+import { {{pascalCase name}}MockFactory } from '@/features/{{kebabCase feature}}/mocks/factories/{{kebabCase name}}.factory';
+
+export const {{pascalCase name}}Handlers = [
+  rest.get(`${API_ENDPOINT}/example`, (req, res, ctx) => {
+    return res(
+      ctx.json(
+        {{pascalCase name}}MockFactory.example.getAll()
+      )
+    );
+  }),
+];

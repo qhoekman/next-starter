@@ -1,0 +1,19 @@
+import { Meta, StoryFn } from '@storybook/react';
+
+import { {{pascalCase name}}Page } from './{{kebabCase name}}';
+
+export default {
+  title: '{{prefix}}/{{titleCase name}}',
+  component: {{pascalCase name}}Page,
+} as Meta<typeof {{pascalCase name}}Page>;
+
+const Template: StoryFn<typeof {{pascalCase name}}Page> = (args) => <{{pascalCase name}}Page {...args}></{{pascalCase name}}Page>;
+
+export const Default = {
+  render: Template,
+  args: {},
+  parameters: {
+    layout: 'fullscreen',
+  },
+};
+

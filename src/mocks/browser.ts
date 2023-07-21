@@ -1,5 +1,6 @@
-import { mockSeed } from '@/mocks/seed';
 import { setupWorker } from 'msw';
+
+import { mockSeed } from '@/mocks/seed';
 
 export const mockHandlers = [];
 

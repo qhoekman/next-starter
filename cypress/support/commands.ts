@@ -1,4 +1,6 @@
-import '@testing-library/cypress/add-commands';
-import './mocks/mocks';
+/// <reference types="cypress" />
+/// <reference types="@testing-library/cypress" />
 
-export {};
+import '@testing-library/cypress/add-commands';
+import './env/env'; // make sure that process.env is available while testing
+import './mocks/mocks';

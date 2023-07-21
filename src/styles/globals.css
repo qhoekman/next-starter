@@ -2,36 +2,55 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
-  :root {
-    --color-background: 0 0% 100%;
-    --color-foreground: 222.2 47.4% 11.2%;
-    --color-primary: 222.2 47.4% 11.2%;
-    --color-primary-fg: 210 40% 98%;
-    --color-secondary: 210 40% 96.1%;
-    --color-secondary-fg: 222.2 47.4% 11.2%;
-    --color-accent: 210 40% 96.1%;
-    --color-accent-fg: 222.2 47.4% 11.2%;
-    --color-destructive: 0 100% 50%;
-    --color-destructive-fg: 210 40% 98%;
-    --color-ring: 215 20.2% 65.1%;
-    --color-border: 214.3 31.8% 91.4%;
-    --color-input: 214.3 31.8% 91.4%;
-  }
+.light {
+  --color-background: #ffffff;
+  --color-foreground: #0f172a;
+  --color-primary: #0f172a;
+  --color-primary-fg: #f8fafc;
+  --color-secondary: #f1f5f9;
+  --color-secondary-fg: #0f172a;
+  --color-muted: #f1f5f9;
+  --color-muted-fg: #64748b;
+  --color-accent: #f1f5f9;
+  --color-accent-fg: #0f172a;
+  --color-destructive: #ff0000;
+  --color-destructive-fg: #f8fafc;
+  --color-success: #00ff00;
+  --color-success-fg: #0f172a;
+  --color-ring: #94a3b8;
+  --color-border: #e2e8f0;
+  --color-input: #e2e8f0;
+}
 
-  .dark {
-    --color-background: 224 71% 4%;
-    --color-foreground: 213 31% 91%;
-    --color-primary: 210 40% 98%;
-    --color-primary-fg: 222.2 47.4% 1.2%;
-    --color-secondary: 222.2 47.4% 11.2%;
-    --color-secondary-fg: 210 40% 98%;
-    --color-destructive: 0 63% 31%;
-    --color-destructive-fg: 210 40% 98%;
-    --color-accent: 216 34% 17%;
-    --color-accent-fg: 210 40% 98%;
-    --color-ring: 216 34% 17%;
-    --color-border: 216 34% 17%;
-    --color-input: 216 34% 17%;
-  }
+.dark {
+  --color-background: #030711;
+  --color-foreground: #e1e7ef;
+  --color-primary: #f8fafc;
+  --color-primary-fg: #020205;
+  --color-secondary: #0f172a;
+  --color-secondary-fg: #f8fafc;
+  --color-muted: #0f1629;
+  --color-muted-fg: #7f8ea3;
+  --color-destructive: #bc0000;
+  --color-destructive-fg: #f8fafc;
+  --color-success: #00bc00;
+  --color-success-fg: #0f172a;
+  --color-accent: #1d283a;
+  --color-accent-fg: #f8fafc;
+  --color-ring: #1d283a;
+  --color-border: #1d283a;
+  --color-input: #1d283a;
+}
+
+html,
+body,
+#__next {
+  @apply h-full;
+}
+* {
+  @apply border-border;
+}
+body {
+  @apply bg-background text-foreground;
+  font-feature-settings: 'rlig' 1, 'calt' 1;
 }

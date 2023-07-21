@@ -1,8 +1,9 @@
 import * as React from 'react';
+import { ThreeDotsIcon } from '@/assets/icons/three-dots';
 import { Slot } from '@radix-ui/react-slot';
 import { VariantProps, cva } from 'class-variance-authority';
 
-import { classNames } from '@/lib/classnames';
+import { cn } from '@/lib/classnames';
 import { testId } from '@/lib/testids';
 
 const buttonVariants = cva(
@@ -10,10 +11,10 @@ const buttonVariants = cva(
   {
     variants: {
       variant: {
-        default: 'bg-primary text-primary-fg hover:bg-primary/90',
-        destructive: 'bg-destructive text-destructive-fg hover:bg-destructive/90',
+        default: 'hover:bg-primary/90 bg-primary text-primary-fg',
+        destructive: 'hover:bg-destructive/90 bg-destructive text-destructive-fg',
         outline: 'border border-input hover:bg-accent hover:text-accent-fg',
-        secondary: 'bg-secondary text-secondary-fg hover:bg-secondary/80',
+        secondary: 'hover:bg-secondary/80 bg-secondary text-secondary-fg',
         ghost: 'hover:bg-accent hover:text-accent-fg',
         link: 'text-primary underline-offset-4 hover:underline',
       },
@@ -34,19 +35,23 @@ export interface ButtonProps
   extends React.ButtonHTMLAttributes<HTMLButtonElement>,
     VariantProps<typeof buttonVariants> {
   asChild?: boolean;
+  isLoading?: boolean;
 }
 
 const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
-  ({ className, variant, size, asChild = false, ...props }, ref) => {
+  ({ className, variant, size, asChild = false, isLoading, children, ...props }, ref) => {
     const Comp = asChild ? Slot : 'button';
 
     return (
       <Comp
         data-testid={testId('button')}
-        className={classNames(buttonVariants({ variant, size, className }))}
+        disabled={isLoading || props.disabled}
+        className={cn(buttonVariants({ variant, size, className }))}
         ref={ref}
         {...props}
-      />
+      >
+        {isLoading ? <ThreeDotsIcon className="h-3" /> : children}
+      </Comp>
     );
   }
 );

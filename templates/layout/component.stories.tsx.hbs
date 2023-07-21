@@ -1,0 +1,16 @@
+import { Meta, StoryFn } from '@storybook/react';
+
+import { {{pascalCase name}}Layout } from './{{kebabCase name}}';
+
+export default {
+  title: '{{prefix}}/{{titleCase name}} Layout',
+  component: {{pascalCase name}}Layout,
+} as Meta<typeof {{pascalCase name}}Layout>;
+
+const Template: StoryFn<typeof {{pascalCase name}}Layout> = (args) => <{{pascalCase name}}Layout {...args}></{{pascalCase name}}Layout>;
+
+export const Default = {
+  render: Template,
+  args: {},
+};
+

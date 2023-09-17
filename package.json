@@ -19,8 +19,8 @@
     "cy:run:ct": "NODE_ENV=test cypress run --component --spec='src/**/*'",
     "cy:run:e2e": "NODE_ENV=test cypress run --e2e --spec='cypress/e2e/**/*'",
     "chromatic": "chromatic",
-    "sb:dev": "storybook dev -p 6006 -s ../public",
-    "sb:build": "storybook build -s ../public ",
+    "sb:dev": "storybook dev -p 6006 -s ./public",
+    "sb:build": "storybook build -s ./public ",
     "prepare": "husky install"
   },
   "dependencies": {

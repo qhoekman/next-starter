@@ -7,7 +7,7 @@
 
 ---
 
-<p align="center"> This is a boilerplate project to quickly start a new Next.js front-end project within DIJ
+<p align="center"> This is a boilerplate project to quickly start a new Next.js front-end project
     <br>
 </p>
 
@@ -40,9 +40,9 @@ What things you need to install the software and how to install them.
 A step by step series of examples that tell you how to get a development env running.
 
 ```sh
-npx degit git@bitbucket.org:deinternetjongens/frontend-next-starter.git --mode=git <project-name>
+yarn create next-app -e git@github.com:qhoekman/next-starter.git <project-name>
 cd <project-name>
-npm install
+yarn install
 ```
 
 Configure the `.env` file with the correct values, e.g. `NEXT_PUBLIC_API_ENDPOINT` needs to be set to the correct API endpoint.
@@ -117,24 +117,6 @@ npm run cy:run:e2e
 ```
 
 > This will run all end to end tests in the terminal.
-
-## ☝️ Updates from starter-kit
-
-To get updates from the starter-kit we make use of git remotes. To add the starter-kit as a remote run:
-
-```sh
-
-git remote add starter git@bitbucket.org:deinternetjongens/frontend-next-starter.git
-
-```
-
-To get the latest updates from the starter-kit run:
-
-```sh
-
-git pull starter main  --allow-unrelated-histories
-
-```
 
 ## 🔑 SSL setup
 

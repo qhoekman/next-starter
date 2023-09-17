@@ -6,7 +6,7 @@ import { cn } from '@/lib/classnames';
 
 type LinkProps = React.AnchorHTMLAttributes<HTMLAnchorElement> & NextLinkProps;
 
-const LinkStyle = cva('font-semibold text-primary hover:text-muted-fg', {
+const LinkStyle = cva('font-semibold text-primary hover:text-primary/90', {
   variants: {},
 });
 

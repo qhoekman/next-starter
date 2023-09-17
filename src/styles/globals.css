@@ -2,55 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-.light {
-  --color-background: #ffffff;
-  --color-foreground: #0f172a;
-  --color-primary: #0f172a;
-  --color-primary-fg: #f8fafc;
-  --color-secondary: #f1f5f9;
-  --color-secondary-fg: #0f172a;
-  --color-muted: #f1f5f9;
-  --color-muted-fg: #64748b;
-  --color-accent: #f1f5f9;
-  --color-accent-fg: #0f172a;
-  --color-destructive: #ff0000;
-  --color-destructive-fg: #f8fafc;
-  --color-success: #00ff00;
-  --color-success-fg: #0f172a;
-  --color-ring: #94a3b8;
-  --color-border: #e2e8f0;
-  --color-input: #e2e8f0;
-}
-
-.dark {
-  --color-background: #030711;
-  --color-foreground: #e1e7ef;
-  --color-primary: #f8fafc;
-  --color-primary-fg: #020205;
-  --color-secondary: #0f172a;
-  --color-secondary-fg: #f8fafc;
-  --color-muted: #0f1629;
-  --color-muted-fg: #7f8ea3;
-  --color-destructive: #bc0000;
-  --color-destructive-fg: #f8fafc;
-  --color-success: #00bc00;
-  --color-success-fg: #0f172a;
-  --color-accent: #1d283a;
-  --color-accent-fg: #f8fafc;
-  --color-ring: #1d283a;
-  --color-border: #1d283a;
-  --color-input: #1d283a;
-}
-
 html,
 body,
 #__next {
-  @apply h-full;
-}
-* {
-  @apply border-border;
+  height: 100%;
 }
 body {
-  @apply bg-background text-foreground;
   font-feature-settings: 'rlig' 1, 'calt' 1;
 }

@@ -7,15 +7,14 @@ import { cn } from '@/lib/classnames';
 import { testId } from '@/lib/testids';
 
 const buttonVariants = cva(
-  'inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50',
+  'focus-visible:ring-ring inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50',
   {
     variants: {
       variant: {
-        default: 'hover:bg-primary/90 bg-primary text-primary-fg',
-        destructive: 'hover:bg-destructive/90 bg-destructive text-destructive-fg',
-        outline: 'border border-input hover:bg-accent hover:text-accent-fg',
-        secondary: 'hover:bg-secondary/80 bg-secondary text-secondary-fg',
-        ghost: 'hover:bg-accent hover:text-accent-fg',
+        default: 'bg-primary text-white hover:bg-primary/90',
+        destructive: 'bg-red-500 text-white hover:bg-red-400',
+        outline: 'border border-gray-300 hover:bg-gray-100 hover:text-gray-900',
+        ghost: 'hover:bg-gray-100 hover:text-gray-900',
         link: 'text-primary underline-offset-4 hover:underline',
       },
       size: {

@@ -11,5 +11,7 @@ const Template: StoryFn<typeof Input> = (args) => <Input {...args}></Input>;
 
 export const Default = {
   render: Template,
-  args: {},
+  args: {
+    placeholder: 'Input',
+  },
 };

@@ -22,7 +22,7 @@ export const ErrorLayout: React.FC<ErrorLayoutProps> = ({ children = null, statu
             <p className="mb-4 text-3xl font-bold tracking-tight text-foreground  md:text-4xl">
               {t(`error.${status}.title`)}
             </p>
-            <p className="mb-4 text-lg font-light text-muted-fg">
+            <p className="mb-4 text-lg font-light text-gray-400">
               {t(`error.${status}.description`)}
             </p>
             {children}

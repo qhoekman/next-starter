@@ -8,38 +8,22 @@ module.exports = {
         sans: ['var(--font-inter)', 'sans-serif'],
       },
       colors: {
-        border: 'var(--color-border)',
-        input: 'var(--color-input)',
-        ring: 'var(--color-ring)',
-        background: 'var(--color-background)',
-        foreground: 'var(--color-foreground)',
+        background: '#1A1A1A',
+        foreground: '#121212',
+        ring: '#94a3b8',
         primary: {
-          DEFAULT: 'var(--color-primary)',
-          fg: 'var(--color-primary-fg)',
-        },
-        secondary: {
-          DEFAULT: 'var(--color-secondary)',
-          fg: 'var(--color-secondary-fg)',
-        },
-        destructive: {
-          DEFAULT: 'var(--color-destructive)',
-          fg: 'var(--color-destructive-fg)',
-        },
-        success: {
-          DEFAULT: 'var(--color-success)',
-          fg: 'var(--color-success-fg)',
-        },
-        accent: {
-          DEFAULT: 'var(--color-accent)',
-          fg: 'var(--color-accent-fg)',
-        },
-        muted: {
-          DEFAULT: 'var(--color-muted)',
-          fg: 'var(--color-muted-fg)',
-        },
-        card: {
-          DEFAULT: 'var(--color-card)',
-          fg: 'var(--color-card-fg)',
+          DEFAULT: '#FF8629',
+          50: '#FFF1E5',
+          100: '#FFE2CC',
+          200: '#FFC294',
+          300: '#FFA561',
+          400: '#FF8629',
+          500: '#F56A00',
+          600: '#C25400',
+          700: '#944000',
+          800: '#612A00',
+          900: '#331600',
+          950: '#190B00',
         },
       },
       boxShadow: {

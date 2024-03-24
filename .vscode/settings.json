@@ -4,5 +4,7 @@
   "editor.codeActionsOnSave": {
     "source.fixAll": "always",
     "source.organizeImports": "always"
-  }
+  },
+  "typescript.preferences.importModuleSpecifier": "non-relative",
+  "i18n-ally.localesPaths": ["locales"] // Tells VSCode to use the tsconfig paths
 }

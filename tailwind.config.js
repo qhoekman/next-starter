@@ -1,33 +1,39 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   darkMode: 'class',
-  content: ['./src/**/*.{ts,tsx}'],
+  content: ['./src/**/*.tsx'],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ['var(--font-inter)', 'sans-serif'],
+      },
       colors: {
-        border: 'hsl(var(--color-border))',
-        input: 'hsl(var(--color-input))',
-        ring: 'hsl(var(--color-ring))',
-        background: 'hsl(var(--color-background))',
-        foreground: 'hsl(var(--color-foreground))',
+        background: '#1A1A1A',
+        foreground: '#121212',
+        ring: '#94a3b8',
         primary: {
-          DEFAULT: 'hsl(var(--color-primary))',
-          fg: 'hsl(var(--color-primary-fg))',
+          DEFAULT: '#FF8629',
+          50: '#FFF1E5',
+          100: '#FFE2CC',
+          200: '#FFC294',
+          300: '#FFA561',
+          400: '#FF8629',
+          500: '#F56A00',
+          600: '#C25400',
+          700: '#944000',
+          800: '#612A00',
+          900: '#331600',
+          950: '#190B00',
         },
-        secondary: {
-          DEFAULT: 'hsl(var(--color-secondary))',
-          fg: 'hsl(var(--color-secondary-fg))',
-        },
-        destructive: {
-          DEFAULT: 'hsl(var(--color-destructive))',
-          fg: 'hsl(var(--color-destructive-fg))',
-        },
-        accent: {
-          DEFAULT: 'hsl(var(--color-accent))',
-          fg: 'hsl(var(--color-accent-fg))',
-        },
+      },
+      boxShadow: {
+        outline: '0 0 0 3px rgba(66, 153, 225, 0.5)',
       },
     },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/forms'),
+    require('@tailwindcss/typography'),
+    require('tailwindcss-animate'),
+  ],
 };

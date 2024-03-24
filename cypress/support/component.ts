@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-namespace */
 // ***********************************************************
 // This example support/component.ts is processed and
 // loaded automatically before your test files.
@@ -15,27 +14,14 @@
 // ***********************************************************
 
 // Import commands.js using ES2015 syntax:
-import './commands';
-// Alternatively you can use CommonJS syntax:
-// require('./commands')
-
+import '@/styles/globals.css';
+import React from 'react';
 import { mount } from 'cypress/react18';
 
-import '../../src/styles/globals.css';
+import './commands';
 
-// Augment the Cypress namespace to include type definitions for
-// your custom command.
-// Alternatively, can be defined in cypress/support/component.d.ts
-// with a <reference path="./component" /> at the top of your spec.
-declare global {
-  namespace Cypress {
-    interface Chainable {
-      mount: typeof mount;
-    }
-  }
-}
-
-Cypress.Commands.add('mount', mount);
-
-// Example use:
-// cy.mount(<MyComponent />)
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-ignore
+Cypress.Commands.add('mount', (component: React.ReactElement) => {
+  return mount(component);
+});

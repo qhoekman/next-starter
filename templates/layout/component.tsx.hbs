@@ -1,0 +1,9 @@
+import React from 'react';
+
+interface {{pascalCase name}}LayoutProps {
+  children: React.ReactNode;
+}
+
+export const {{pascalCase name}}Layout: React.FC<{{pascalCase name}}LayoutProps> = ({children}) => {
+  return <div data-testid="{{kebabCase name}}">{children}</div>;
+};

@@ -1,15 +1,28 @@
-import type { Meta, StoryFn } from '@storybook/react';
+import { Meta, StoryFn } from '@storybook/react';
 
-import { Button } from '@/components/button/button';
+import { Box } from '@/components/box/box';
+
+import { Button } from './button';
 
 export default {
-  title: 'Components/Actions/Button',
+  title: 'Components/Button',
   component: Button,
 } as Meta<typeof Button>;
 
-export const Default: StoryFn = (args) => <Button {...args}>Hello World</Button>;
-export const AsLink: StoryFn = (args) => (
-  <Button {...args} asChild>
-    <a href="https://google.com">Hello World</a>
-  </Button>
+const Template: StoryFn<typeof Button> = (args) => (
+  <Box layout="hstack">
+    <Button {...args}></Button>
+    <Button isLoading>Loading</Button>
+    <Button variant="destructive">Destructive</Button>
+    <Button variant="outline">Outline</Button>
+    <Button variant="ghost">Ghost</Button>
+    <Button variant="link">Link</Button>
+  </Box>
 );
+
+export const Default = {
+  render: Template,
+  args: {
+    children: 'Button',
+  },
+};

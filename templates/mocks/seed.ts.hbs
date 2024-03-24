@@ -1,0 +1,6 @@
+import { {{pascalCase name}}MockData } from '@/features/{{kebabCase name}}/mocks/data/{{kebabCase name}}.data';
+import { {{pascalCase name}}MockFactory } from '@/features/{{kebabCase name}}/mocks/factories/{{kebabCase name}}.factory';
+
+export const {{pascalCase name}}MockSeeder = () => {
+  {{pascalCase name}}MockFactory.example.create(...{{pascalCase name}}MockData);
+};

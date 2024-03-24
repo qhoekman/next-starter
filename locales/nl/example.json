@@ -1,0 +1,20 @@
+{
+  "pages": {
+    "list": {
+      "title": "List of posts",
+      "errors": {
+        "noData": "No posts yet"
+      }
+    },
+    "create": {
+      "title": "Create post"
+    },
+    "edit": {
+      "title": "Edit post",
+      "fields": {
+        "title": "Title",
+        "body": "Content"
+      }
+    }
+  }
+}

@@ -1,0 +1,8 @@
+import { factory, primaryKey } from '@mswjs/data';
+
+export const {{pascalCase name}}MockFactory = factory({
+  example: {
+    id: primaryKey(Number),
+    name: String,
+  },
+});

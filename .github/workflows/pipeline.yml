@@ -42,5 +42,5 @@ jobs:
       - name: Install dependencies
         run: pnpm install
       - run: pnpm sb:build
-      - run: pnpm build --if-present
-      - run: pnpm run lint
+      - run: pnpm build
+      - run: pnpm lint
